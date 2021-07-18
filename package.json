@@ -1,0 +1,22 @@
+{
+  "name": "screen-resize",
+  "version": "1.0.0",
+  "description": "组件根据浏览器大小缩放",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wutong21/component-resize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wutong21/component-resize/issues"
+  },
+  "homepage": "https://github.com/wutong21/component-resize#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}
