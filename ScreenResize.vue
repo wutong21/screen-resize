@@ -12,6 +12,10 @@
 <script>
 export default {
   name: "ScreenResize",
+  props: {
+    screenWidth: {type: Number, default: 1920},
+    screenHeight: {type: Number, default: 1080},
+  },
   data() {
     return {
       width: 1,
@@ -25,8 +29,8 @@ export default {
     renderResize() {
       const that = this;
       const dom = document.getElementsByClassName("screen-resize")[0];
-      let standardWidth = 1920;
-      let standardHeight = 1080;
+      let standardWidth = this.screenWidth;
+      let standardHeight = this.screenHeight;
       let clientWidth = document.body.clientWidth;
       let clientHeight = document.body.clientHeight;
       that.width = clientWidth / standardWidth;
