@@ -18,6 +18,9 @@ export default {
       height: 1,
     };
   },
+  created(){
+    this.renderResize()
+  },
   methods: {
     renderResize() {
       const that = this;
