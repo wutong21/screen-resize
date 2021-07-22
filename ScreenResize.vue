@@ -34,12 +34,12 @@ export default {
       let clientWidth = document.body.clientWidth;
       let clientHeight = document.body.clientHeight;
       that.width = clientWidth / standardWidth;
-      that.height = standardHeight / clientHeight;
+      that.height = clientHeight / standardHeight;
       window.addEventListener("resize", () => {
         clientWidth = document.body.clientWidth;
         clientHeight = document.body.clientHeight;
         that.width = clientWidth / standardWidth;
-        that.height = standardHeight / clientHeight;
+        that.height = clientHeight / standardHeight;
       });
     },
   },
