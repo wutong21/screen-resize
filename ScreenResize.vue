@@ -21,8 +21,10 @@ export default {
       height: 1,
     };
   },
-  created(){
-    this.renderResize()
+  mounted(){
+    this.$nextTick(()=>{
+      this.renderResize()
+    })
   },
   methods: {
     renderResize() {
