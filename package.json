@@ -1,6 +1,6 @@
 {
   "name": "screen-resize",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "组件根据浏览器大小缩放",
   "main": "index.js",
   "scripts": {

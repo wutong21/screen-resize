@@ -11,6 +11,7 @@ main.js
 import screenResize from 'screen-resize'
 Vue.use(screenResize)
 ```
+.vue
 ```html
   <screen-resize>
     <div>
@@ -23,3 +24,7 @@ Vue.use(screenResize)
 1. 添加可配置参数
 2. 添加单元测试
   当前组件未进行单元测试，在项目中使用存在一定风险
+## TIP
+
+1. 建议使用百分比搭配flex进行布局
+2. 将body的margin设为0
