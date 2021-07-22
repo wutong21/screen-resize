@@ -1,7 +1,6 @@
 <template>
   <div
     class="screen-resize"
-    :style="`transform: scale(${width}, ${height})`"
   >
     <template>
       <slot></slot>
@@ -33,13 +32,11 @@ export default {
       let standardHeight = this.screenHeight;
       let clientWidth = document.body.clientWidth;
       let clientHeight = document.body.clientHeight;
-      that.width = clientWidth / standardWidth;
-      that.height = clientHeight / standardHeight;
+      dom.style.transform = `scale(${clientWidth / standardWidth},${clientHeight / standardHeight})`
       window.addEventListener("resize", () => {
         clientWidth = document.body.clientWidth;
         clientHeight = document.body.clientHeight;
-        that.width = clientWidth / standardWidth;
-        that.height = clientHeight / standardHeight;
+        dom.style.transform = `scale(${clientWidth / standardWidth},${clientHeight / standardHeight })`
       });
     },
   },
