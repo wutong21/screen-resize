@@ -25,17 +25,23 @@ Vue.use(screenResize);
 
 ## 后续开发计划
 
-1. 添加可配置参数
+1. 添加可配置参数 screenWidth、screenHeight 配置当前设计图或最佳适配屏幕的宽高，
+   默认为1920*1080
 2. 添加单元测试
    当前组件未进行单元测试，在项目中使用存在一定风险
+
+
+## Demo
+
+https://codesandbox.io/s/objective-hermann-1420kh?file=/src/App.vue
 
 ## TIP
 
 1. 建议使用百分比搭配 flex 进行布局
-2. 将 body 的 margin 设为 0
+2. 将 最外层 的 margin 设为 0
 
 ```css
-body {
+最外层 {
   margin: 0;
   height: 100vh;
   width: 100vw;
