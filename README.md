@@ -39,6 +39,7 @@ https://codesandbox.io/s/objective-hermann-1420kh?file=/src/App.vue
 
 1. 建议使用百分比搭配 flex 进行布局
 2. 将 最外层 的 margin 设为 0
+3. 目前仅支持Vue2
 
 ```css
 最外层 {
